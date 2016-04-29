@@ -54,8 +54,7 @@ namespace מבחן_בחשבון
             sum1.Value = 0;
             sum2.Value = 0;
             sum3.Value = 0;
-/// שלום
-///שלום 2
+
 
         }
         private void button2_Click(object sender, EventArgs e)

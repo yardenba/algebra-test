@@ -27,14 +27,27 @@ namespace מבחן_בחשבון
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Form4 f3 = new Form4();
-            f3.ShowDialog();
+            Form4 f4 = new Form4();
+            f4.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form5 f3 = new Form5();
-            f3.ShowDialog();
+            Form5 f5 = new Form5();
+            f5.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form7 f7 = new Form7();
+            f7.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form9 f9 = new Form9();
+            f9.ShowDialog();
         }
     }
+
 }
