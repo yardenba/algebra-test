@@ -15,8 +15,6 @@ namespace מבחן_בחשבון
 
         Random randomizer = new Random();
         int addend1, addend2, addend3, addend4, addend5, addend6;
-
-
         private void label11_Click(object sender, EventArgs e)
         {
 
@@ -26,7 +24,7 @@ namespace מבחן_בחשבון
         {
             StartTheQuiz();
             button1.Enabled = false;
-
+            
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -60,14 +58,19 @@ namespace מבחן_בחשבון
         private void button2_Click(object sender, EventArgs e)
 
         {
+
+
             if ((addend1 + addend2 == sum1.Value) && (addend4 - addend3 == sum2.Value) && (addend6 - addend5 == sum3.Value))
             {
                 Form3 f3 = new Form3();
                 f3.ShowDialog();
                 this.Close();
+    
+                Form1.passTestAdd = true;
+
+             
+
             }
-
-
 
 
         }

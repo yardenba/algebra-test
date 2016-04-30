@@ -57,6 +57,7 @@ namespace מבחן_בחשבון
                 Form3 f3 = new Form3();
                 f3.ShowDialog();
                 this.Close();
+                Form1.passTestMin = true;
             }
         
 

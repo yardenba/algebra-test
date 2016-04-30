@@ -16,7 +16,7 @@ namespace מבחן_בחשבון
         Random randomizer = new Random();
         int addend1, addend2, addend3, addend4, addend5, addend6;
         int sum1Dec, sum2Dec;
-
+        
         public void StartTheQuiz()
         {
             addend1 = randomizer.Next(1, 10);
@@ -39,7 +39,11 @@ namespace מבחן_בחשבון
             sum1.Value = 0;
             sum2.Value = 0;
             sum3.Value = 0;
+
+         
+
         }
+
 
         public Form7()
         {
@@ -56,10 +60,12 @@ namespace מבחן_בחשבון
         {
            if ((sum1Dec / addend2 == sum1.Value) && (sum2Dec /  addend4== sum2.Value) && (addend5 *  addend6== sum3.Value))
              {
-                Form3 f3 = new Form3();
+                Form3 f3 =new Form3();
                 f3.ShowDialog();
                 this.Close();
-             }
+                Form1.passTestDiv = true;
+
+            }
         }
    
     }
