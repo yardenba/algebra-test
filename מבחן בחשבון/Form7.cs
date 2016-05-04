@@ -17,6 +17,7 @@ namespace מבחן_בחשבון
         int addend1, addend2, addend3, addend4, addend5, addend6;
         int sum1Dec, sum2Dec;
         
+       
         public void StartTheQuiz()
         {
             addend1 = randomizer.Next(1, 10);
@@ -48,12 +49,15 @@ namespace מבחן_בחשבון
         public Form7()
         {
             InitializeComponent();
+            button3.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             StartTheQuiz();
             button1.Enabled = false;
+            button3.Enabled = true;
+
         }
 
         private void button3_Click(object sender, EventArgs e)

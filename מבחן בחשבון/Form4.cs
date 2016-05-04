@@ -41,12 +41,14 @@ namespace מבחן_בחשבון
         public Form4()
         {
             InitializeComponent();
+            button2.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             StartTheQuiz();
             button1.Enabled = false;
+            button2.Enabled = true;
         }
 
         private void button2_Click(object sender, EventArgs e)

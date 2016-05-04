@@ -66,6 +66,7 @@ namespace מבחן_בחשבון
         }
         public Form9()
         {
+            button2.Enabled = false;
             InitializeComponent();
         }
 
@@ -84,7 +85,7 @@ namespace מבחן_בחשבון
         {
             StartTheQuiz();
             button1.Enabled = false;
-
+            button2.Enabled = true;
         }
 
     }
